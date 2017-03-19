@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Black Jack;
+  src: url(resources/blackjack.ttf);
+}
+
+body, html {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar {
+	background:#312c2a;
+	height: 30px;
+	text-align:center;
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	transform: translate(0px, 4px);
+}
+
+.navbar li {
+	display: inline;
+	margin-right:25px;
+	margin-left:25px;
+}
+
+.navbar a {
+	color: white;
+	font-size:20px;
+	font-family: 'Andale Mono', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.portada {
+	background-image: url(imgs/portada.jpg);
+	background-size: cover;
+	height: 250px;
+	text-align:center;
+	position:relative;
+}
+
+.portada h1 {
+	font-family: 'Black Jack', sans-serif;
+	font-size: 4rem;
+	color: white;
+	margin: 0;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.newtitle {
+	text-align: center;
+	padding-top:20px;
+}
+
+.newtitle h2 {
+	font-family: 'Black Jack', sans-serif;
+	font-size: 2.25rem;
+}
+
+.newpoem {
+	width:300px;
+	height:300px;
+	text-align:center;
+	position:relative;
+}
+
+.newpoem a {
+	color: white;
+	font-family: 'Andale Mono', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size:1.5rem;
+}
+
+#oliverviaje {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/oliverviaje.jpg);
+}
+
+.newpoemtext {
+	margin:0;
+	width:200px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
