@@ -1,0 +1,22 @@
+
+body{
+	background: #ACFFA8;
+}
+.fruta{
+	width: 200px;
+	height: 200px;
+}
+.item {
+	margin:40 50 40 50;
+	display: inline-block;
+}
+
+.item p {
+	width: 300px;
+	text-align: justify;
+}
+
+.pancho{
+	display: inline-block;
+	margin: 0 0 70 0;
+}
