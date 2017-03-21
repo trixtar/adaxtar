@@ -10,18 +10,18 @@ h1 {
 }
 
 .modulo1 {
-	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
 }
 
 .perro {
-	display: inline-block;
 	text-align: center;
 	background:#7fc6a4;
 	width: 240px;
 	height: 350px;
-	margin: 0 10 10 10;
-	overflow: hidden;
-	
+	margin: 15 15 15 15;
 	
 }
 
@@ -47,29 +47,44 @@ h1 {
 
 }
 
+
 footer {
-	background: black;
-	color: white;
+	background: #ffff99;
+	color: #8f7779;
 	height:100px;
 }
 
+#contenedor {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
 
 #menu {
 	float:left;
 	width: 150px;
+	text-align: center;
+	padding-right: 25px;
+	margin: 0 auto;
 }
 
 #menu ul {
 	list-style-type: none;
-	margin-right:40px;
-	margin-left: 20px;
 	display: inline-block;
 }
 
 #menu li {
-	background: black;
-	color: white;
-	margin:10 0 10 0;
-	padding: 5 5 5 5;
-	display: inline-block;
+	background: #ffff99;
+	border-radius: 50%;
+	margin:30 0 30 0;
+	padding: 15 10 15 10;
+	display: block;
+}
+
+#menu a {
+	font-family: arial, sans-serif;
+	text-decoration: none;
+	color: #8f7779;
+	font-weight: bold;
 }
