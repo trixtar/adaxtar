@@ -18,3 +18,9 @@
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+.yes {
+	height: 150px;
+	width: 300px;
+	border: 2px red solid;
+}

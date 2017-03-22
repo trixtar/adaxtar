@@ -10,20 +10,19 @@
 
 .navbar {
 	background:#312c2a;
-	height: 30px;
-	text-align:center;
+	height: 35px;
+	width: 100%;
+	
 }
 
 .navbar ul {
-	margin: 0;
-	padding: 0;
-	transform: translate(0px, 4px);
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .navbar li {
-	display: inline;
-	margin-right:25px;
-	margin-left:25px;
+	display: inline-block;
 }
 
 .navbar a {
@@ -32,6 +31,7 @@
 	font-family: 'Andale Mono', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
+	display: inline-block;
 }
 
 .navbar a:hover {

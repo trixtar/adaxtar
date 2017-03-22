@@ -1,3 +1,5 @@
+
+
 body {
 	background: #8f7779;
 }
@@ -7,6 +9,7 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	color:#ffff99;
+	
 }
 
 .modulo1 {
@@ -76,8 +79,8 @@ footer {
 
 #menu li {
 	background: #ffff99;
-	border-radius: 50%;
-	margin:30 0 30 0;
+	border-radius: 20%;
+	margin:0 0 40 0;
 	padding: 15 10 15 10;
 	display: block;
 }
