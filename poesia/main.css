@@ -8,16 +8,22 @@
 	padding: 0px;
 }
 
+body {
+	background-color: #fff2e6;
+}
+
 nav {
 	background:#312c2a;
-	height: 30px;
-	text-align:center;
+	min-height: 30px;
 }
 
 nav ul {
 	margin: 0;
 	padding: 0;
 	transform: translate(0px, 4px);
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 nav li {
@@ -27,7 +33,7 @@ nav li {
 }
 
 nav a {
-	color: white;
+	color: #fff2e6;
 	font-size:20px;
 	font-family: 'Andale Mono', sans-serif;
 	font-weight: bold;
@@ -50,17 +56,18 @@ nav a:hover {
 .portada h1 {
 	font-family: 'Black Jack', sans-serif;
 	font-size: 4rem;
-	color: white;
+	color: #fff2e6;
 }
 
 .newtitle {
 	text-align: center;
-	padding:20px;
+	padding:20px 20px 10px 20px;
 }
 
 .newtitle h2 {
 	font-family: 'Black Jack', sans-serif;
 	font-size: 2.25rem;
+	color: #312c2a;
 }
 
 .poems {
@@ -72,40 +79,162 @@ nav a:hover {
 .newpoem {
 	width:300px;
 	height:300px;
-	text-align:center;
-	position:relative;
+	border: 3px solid #fff2e6;
+}
+
+.newpoem:hover {
+	opacity:0.8;
 }
 
 .newpoem a {
-	color: white;
+	color: #fff2e6;
 	font-family: 'Andale Mono', sans-serif;
 	text-decoration: none;
 	font-weight: bold;
 	font-size:1.5rem;
+	display: inline-block;
+	width:260px;
+	text-shadow: -1px 0 #312c2a, 0 1px #312c2a, 1px 0 #312c2a, 0 -1px #312c2a;
 }
 
 .newpoem a:hover {
 	color:cyan;
 }
 
+.newpoem p {
+	padding:5px;
+}
+	
+
 #oliverviaje {
 	width:300px;
 	height:300px;
 	background-image: url(poemas/imgs/oliverviaje.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
-.newpoemtext {
-	margin:0;
-	width:200px;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#apollinairesalmon {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/apollinairesalmon.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+#hugheshadas {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/hugheshadas.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+#frostnoviembre {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/frostnoviembre.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+#aragonelsa {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/aragonelsa.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+#frostabedules {
+	width:300px;
+	height:300px;
+	background-image: url(poemas/imgs/frostabedules.jpg);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.formu {
+	width:70%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.formu p {
+	display: block;
+	margin: 15px auto;
+	font-family: 'Andale Mono', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color:#312c2a;
+}
+
+.formu p:first-of-type {
+	margin: 0px auto 15px;
+}
+
+.formu select {
+	font-family: 'Andale Mono', sans-serif;
+}
+
+.formu textarea {
+	font-family: 'Andale Mono', sans-serif;
+}
+
+.formbutton {
+	padding:12px;
+	font-size:20px;
+	font-family: 'Andale Mono', sans-serif;
+	margin-right:25px;
+	background: #312c2a;
+	color: #fff2e6;
+	border: 0px solid #312c2a;
+	border-radius: 25px;
+}
+
+.formu input:not(.formbutton) {
+	width: 250px;
+}
+
+.formu input:focus {
+	background: #fffced;
+}
+
+.formbutton:hover {
+	background: #6e625e;
 }
 
 footer {
 	background:#312c2a;
-	height: 30px;
+	min-height: 40px;
 	width:100%;
-	color: white;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	color: #fff2e6;
+	font-size:14px;
+	font-family: 'Andale Mono', sans-serif;
+	font-weight: bold;
 }

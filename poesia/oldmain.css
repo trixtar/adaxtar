@@ -8,33 +8,33 @@
 	padding: 0px;
 }
 
-.navbar {
+nav {
 	background:#312c2a;
-	height: 35px;
-	width: 100%;
-	
+	height: 30px;
+	text-align:center;
 }
 
-.navbar ul {
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
+nav ul {
+	margin: 0;
+	padding: 0;
+	transform: translate(0px, 4px);
 }
 
-.navbar li {
-	display: inline-block;
+nav li {
+	display: inline;
+	margin-right:25px;
+	margin-left:25px;
 }
 
-.navbar a {
+nav a {
 	color: white;
 	font-size:20px;
 	font-family: 'Andale Mono', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
-	display: inline-block;
 }
 
-.navbar a:hover {
+nav a:hover {
 	color:cyan;
 }
 
@@ -55,12 +55,18 @@
 
 .newtitle {
 	text-align: center;
-	padding-top:20px;
+	padding:20px;
 }
 
 .newtitle h2 {
 	font-family: 'Black Jack', sans-serif;
 	font-size: 2.25rem;
+}
+
+.poems {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .newpoem {
@@ -95,4 +101,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+footer {
+	background:#312c2a;
+	height: 30px;
+	width:100%;
+	color: white;
 }
