@@ -212,7 +212,7 @@ nav a:hover {
 
 .formu input:not(.formbutton) {
 	width: 250px;
-}
+} 
 
 .formu input:focus {
 	background: #fffced;
@@ -222,8 +222,46 @@ nav a:hover {
 	background: #6e625e;
 }
 
+
+#servicios table {
+	max-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Andale Mono', sans-serif;
+	border-collapse: collapse;
+}
+
+.tabla thead, tbody {
+	border: 3px solid #312c2a;
+	border-collapse: collapse;
+}
+
+.tabla th {
+	background-color: #312c2a;
+	color: #fff2e6;
+	padding: 15px;
+	border: 3px solid #312c2a;
+}
+
+.tabla td {
+	padding: 15px;
+	border: 3px solid #312c2a;
+}
+
+.tabla tbody tr:nth-child(even) {
+	background-color: white;
+}
+
+.tabla tbody tr:nth-child(odd) {
+	background-color: yellow;
+}
+
+.tabla tfoot td {
+	border: none;
+}
+
 footer {
-	background:#312c2a;
+	background: #312c2a;
 	min-height: 40px;
 	width:100%;
 	margin-top: 20px;

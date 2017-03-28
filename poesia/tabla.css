@@ -1,0 +1,31 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+table {
+	border: 1px black solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+tr {
+	background: pink;
+	color:blue;
+}
+
+td {
+	border: 1px black solid;
+	padding: 10px;
+}
+
+th {
+	background: blue;
+	color: white;
+	border: 1px black solid;
+	padding: 10px;
+}
+
+.rowyellow {
+	background: yellow;
+}
