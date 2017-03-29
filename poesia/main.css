@@ -47,7 +47,7 @@ nav a:hover {
 .portada {
 	background-image: url(imgs/portada.jpg);
 	background-size: cover;
-	height: 250px;
+	height: 200px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -222,9 +222,28 @@ nav a:hover {
 	background: #6e625e;
 }
 
+#sendtxt {
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#sendtxt p {
+	display: block;
+	margin: 15px auto;
+	font-family: 'Andale Mono', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color:#312c2a;
+}
+
+#sendtxt p:nth-child(4) {
+	font-size: 11px;
+}
 
 #servicios table {
-	max-width: 50%;
+	max-width: 40%;
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Andale Mono', sans-serif;
@@ -248,6 +267,10 @@ nav a:hover {
 	border: 3px solid #312c2a;
 }
 
+.tabla tbody {
+	border-bottom: 3px solid #312c2a;
+}
+
 .tabla tbody tr:nth-child(even) {
 	background-color: white;
 }
@@ -257,7 +280,7 @@ nav a:hover {
 }
 
 .tabla tfoot td {
-	border: none;
+	border: 0px;
 }
 
 footer {

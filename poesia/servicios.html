@@ -10,7 +10,6 @@
 
 <body>	
 
-	<header>
 	<nav>
 		<ul>
 			<li><a href="index.html">home</a></li>
@@ -21,17 +20,16 @@
 		</ul>
 	</nav>
 
-	<div class="portada">
+	<header class="portada">
 		<h1>Poesía en traducción</h1>
-	</div>
 	</header>
 
 
 	<section id="servicios">
 
-		<div class="newtitle">  <!--solo el titulo del div-->
+		<header class="newtitle">  <!--solo el titulo del div-->
 			<h2>Servicios ofrecidos</h2>
-		</div>
+		</header>
 
 		<table class="tabla" id="servicios">
 			<thead><tr>
@@ -72,6 +70,17 @@
 			</tfoot>
 			
 		</table>
+
+		
+				
+			<form id="sendtxt" action="#" method="post">
+				<p>Envía tu archivo de texto para presupuestar:<br/>
+				<input type="file" name="texto" accept=".doc,.docx,.rtf,.txt,.pdf,.odt">*</p>
+				<p>E-mail: <input type="email" name="email" value="e-mail"><p>
+				<p>Formatos aceptados: .doc .docx .rtf .txt .pdf .odt</p>
+				<input type="submit" value="Enviar" class="formbutton" />
+			</form>
+		
 
 	</section>
 
