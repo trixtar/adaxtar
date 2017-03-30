@@ -203,11 +203,17 @@ nav a:hover {
 	padding:12px;
 	font-size:20px;
 	font-family: 'Andale Mono', sans-serif;
-	margin-right:25px;
+	margin-left:25px;
 	background: #312c2a;
 	color: #fff2e6;
 	border: 0px solid #312c2a;
 	border-radius: 25px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+}
+
+.formbutton:first-of-type {
+	margin-left: 0px;
 }
 
 .formu input:not(.formbutton) {
@@ -216,6 +222,11 @@ nav a:hover {
 
 .formu input:focus {
 	background: #fffced;
+}
+
+.align-right {
+	display: flex;
+	justify-content:flex-end;
 }
 
 .formbutton:hover {
@@ -298,4 +309,203 @@ footer p {
 	font-size:14px;
 	font-family: 'Andale Mono', sans-serif;
 	font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+	nav {
+	min-height: 46px;
+	}
+
+	nav li {
+	margin-right:8px;
+	margin-left:8px;
+	}
+
+	nav a {
+	font-size:14px;
+	}
+
+	.portada {
+	height: 100px;
+	}
+
+	.portada h1 {
+	font-size: 2rem;
+	}	
+
+	.newtitle h2 {
+	font-size: 1.5rem;
+	}
+
+	.newpoem {
+	width:150px;
+	height:150px;
+	border: 1.5px solid #fff2e6;
+	}
+
+	.newpoem a {
+	font-size:1rem;
+	width:130px;
+	}
+
+	#oliverviaje {
+	width:150px;
+	height:150px;
+	}
+
+	#apollinairesalmon {
+	width:150px;
+	height:150px;
+	}
+
+	#hugheshadas {
+	width:150px;
+	height:150px;
+	}
+
+	#frostnoviembre {
+	width:150px;
+	height:150px;
+	}
+
+	#aragonelsa {
+	width:150px;
+	height:150px;
+	}
+
+	#frostabedules {
+	width:150px;
+	height:150px;
+	}
+
+	.formbutton {
+	padding:10px;
+	font-size:14px;
+	margin-right:20px;
+	}
+
+	.formu input:not(.formbutton) {
+	width: 200px;
+	} 
+
+	textarea {
+	max-width: 250px;
+	}
+
+	footer {
+	min-height: 30px;
+	margin-top: 20px;
+	}
+
+	footer p {
+	font-size:12px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 640px) and (orientation:landscape) {
+	
+	nav {
+	min-height: 46px;
+	}
+
+	nav ul {
+	transform: translate(0px, 4px);
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+
+	nav li {
+	
+	margin-right:25px;
+	margin-left:25px;
+	}
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	.portada {
+	height: 100px;
+	}
+
+	.portada h1 {
+	font-size: 2.5rem;
+	}
+
+	.newtitle h2 {
+	font-size: 1.7rem;
+	}
+
+
+	.newpoem {
+	width:200px;
+	height:200px;
+	border: 2.5px solid #fff2e6;
+	}
+
+	.newpoem a {
+	font-size:1.25rem;
+	width:176px;
+	}
+
+	#oliverviaje {
+	width:200px;
+	height:200px;
+	}
+
+	#apollinairesalmon {
+	width:200px;
+	height:200px;
+	}
+
+	#hugheshadas {
+	width:200px;
+	height:200px;
+	}
+
+	#frostnoviembre {
+	width:200px;
+	height:200px;
+	}
+
+	#aragonelsa {
+	width:200px;
+	height:200px;
+	}
+
+	#frostabedules {
+	width:200px;
+	height:200px;
+	}
+
+	.formbutton {
+	padding:14px;
+	font-size:16px;
+	margin-right:20px;
+	}
+
+	.formu input:not(.formbutton) {
+	width: 230px;
+	} 
+
+	textarea {
+	max-width: 350px;
+	}
+
+	footer {
+	min-height: 30px;
+	margin-top: 20px;
+	}
+
+	footer p {
+	font-size:12px;
+	}
+
 }
