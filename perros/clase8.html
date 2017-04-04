@@ -23,13 +23,13 @@
 		<div class="perro">
 			<h2>Pekinés</h2>
 			<img src="imgs/pekines.jpg"/>
-			<p>Oriundo de Pekín, China, era el perro de Buda.</p>
+			<p>Oriundo de Pekín, China, era el perro de Buda.<span class="mastexto"></span></p>
 		</div>
 
-		<div class="perro perro-par">
+		<div class="perro">
 			<h2>Cocker</h2>
 			<img src="imgs/cocker.jpg"/>
-			<p>Muy energético y juguetón.</p>
+			<p>Muy energético y juguetón. <span id="cocker1">Fue desarrollada con la finalidad de perseguir a las gallinetas arreándolas de sus escondites en los arbustos. Existen dos variedades: El cocker spaniel inglés, procedente de Gales y de orígenes españoles, y el cocker spaniel americano, que resultó de la adaptación del cocker spaniel inglés a Estados Unidos.</span></p><button id="cocker2" onClick="verMasTexto()">Ver más...</button><button id="cocker3" class="cocker3" onClick="verMenosTexto()">Ver menos...</button>
 		</div>
 
 		<div class="perro">
@@ -46,7 +46,7 @@
 		</div>
 
 
-		<div class="perro perro-par">
+		<div class="perro">
 			<h2>Cocker</h2>
 			<img src="imgs/cocker.jpg"/>
 			<p>Muy energético y juguetón.</p>
@@ -65,4 +65,21 @@
 		</footer>
 
 	</body>
+
+<script>
+function verMasTexto() {
+    document.getElementById("cocker1").style.display = "inline";
+    document.getElementById("cocker2").style.display = "none";
+    document.getElementById("cocker3").style.display = "inline-block";
+}
+
+function verMenosTexto() {
+    document.getElementById("cocker1").style.display = "none";
+    document.getElementById("cocker2").style.display = "inline-block";
+    document.getElementById("cocker3").style.display = "none";
+}
+</script>
+
+
+
 </html>

@@ -1,20 +1,22 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	}
 
-.container {
+body {
+	background: url('backform.jpg') repeat #d7c2ad;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	background: url('backform.jpg') repeat #d7c2ad;
-	}
+}
 
 .formulario {
-	margin: 50px;
-	padding: 50px;
-	width:40%;
-	height:50%;
+	margin: 100px auto;
+	padding: 60px 80px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	background: #f6eedb;
 	border: 4px dashed #562d19;
 	}
