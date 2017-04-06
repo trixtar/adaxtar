@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: white;
+	width: 100%;
+}
+
+#check-item {
+	display: block;
+	position: fixed;
+	top:0px;
+	left:0px;
+	
+}
+
+
+.menu-mobile {
+  background-color: white;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  
+}
+
+.menu-mobile ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+	}
+
+.menu-mobile li a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	border-right: 1px solid #f4f4f4;
+	color:black;
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+
+.menu-mobile li a:hover {
+  background-color: black;
+  color:white;
+}
+
+.menu-mobile .dropdown {
+	clear: both;
+	display:none;
+}
+
+.menu-mobile .menu-icon {
+  width:48px;
+  height:48px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 20px;
+  position: relative;
+  background: url('menu-icon.png') center no-repeat;
+}
+
+.menu-mobile .hamburger {
+   display: block; 
+}
+
+.menu-mobile #check-item {
+	display: none;
+}
+
+.menu-mobile #check-item:checked ~ .dropdown {
+	display: block;
+}
+
+.menu-mobile #check-item:checked ~ .menu-icon {
+	background: url('menu-close.png') center no-repeat;
+}
