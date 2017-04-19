@@ -1,0 +1,21 @@
+body {
+	background: grey;
+}
+
+.caja {
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	margin: 20px 0;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.even {
+	background:pink;
+}
+
+.odd {
+	background:white;
+}

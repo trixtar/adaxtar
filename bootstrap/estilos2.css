@@ -17,6 +17,57 @@ a {
 	color:red;
 }
 
+.nav-top {
+	background: red;
+	min-height: 60px;
+	margin: 0 0 10px;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-family: 'Arsenal', sans-serif;
+}
+
+.nav-top button, .nav-top button a {
+	font-family: 'Arsenal', sans-serif;
+	font-weight: bold;
+	color: red;
+	font-size: 1.75rem;
+}
+
+.nav-top button:hover {
+	background-color: #f4f2e9;
+	color: red;
+}
+
+.nav-top .btn-default:focus, .dropdown-toggle:focus, .open:focus {
+	color:red;
+}
+
+
+/*
+.botones {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.botonmenu {
+	padding: 8px;
+	font-size: 1.2em;
+	background: white;
+	color: red;
+	border-radius: 10px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.botonmenu:hover {
+	background: pink;
+	color: black;
+	text-decoration: none;
+}
+*/
+
 .back-img {
 	background: url(img/back3.png);
 	background-position: top right;
@@ -57,7 +108,7 @@ a {
 	margin-bottom: 30px;
 	border-left: 1px solid black;
 	height: 340px;
-	background: beige;
+	background: #f4f2e9;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -97,7 +148,7 @@ a {
 }
 
 .highlight {
-	background: #edacae;
+	background: #ffd1da;
 }
 
 .noticias {

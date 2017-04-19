@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Palanquin;
+  src: url(fonts/Palanquin-Bold.ttf);
+}
+
+h1 {
+	font-family: 'Palanquin', sans-serif;
+	font-size: 3em;
+	letter-spacing: -1px;
+}
+
+
+.back {
+	background: url(img/formback.jpg) repeat;
+	padding: 30px 30px;
+	margin: 0px;
+}
+
+.back img {
+	margin-bottom: 30px;
+}
+
+.inscripcion {
+	background: white;
+	border-radius: 10px;
+	border: 4px dotted #0151c9;
+	
+}
+
+.formulario-inscripcion {
+	min-height: 400px;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.form-check-label {
+	font-weight: normal;
+}
+
+.form-group .btn-primary {
+	margin-left: 10px;
+}
+
+form .btn-primary {
+	background-color: #ff8e2a;
+	color: black;
+	border-color: #c4b67c;
+	font-weight: bold;
+}
+
+form .btn-primary:hover {
+	background-color: #ede2b5;
+	color: black;
+	border-color: #c4b67c;
+	font-weight: bold;
+}
+
+.btn-foto {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
