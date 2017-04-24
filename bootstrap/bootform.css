@@ -37,8 +37,17 @@ h1 {
 	font-weight: normal;
 }
 
-.form-group .btn-primary {
-	margin-left: 10px;
+.no-indent + .no-indent {
+	margin-left: 0px;
+	margin-right: 8px;
+}
+
+.no-indent:first-of-type {
+	margin-right: 8px;
+}
+
+.no-indent:last-of-type {
+	margin-right: 0px;
 }
 
 form .btn-primary {
@@ -61,4 +70,12 @@ form .btn-primary:hover {
 
 .hidden {
 	display: none;
+}
+
+.right {
+	text-align: right;
+}
+
+.right button {
+	margin-left: 5px;
 }

@@ -62,10 +62,10 @@
             <div class="form-group">
             <label for="notebook">¿Traés tu laptop/netbook/tablet?</label>
             <div class="form-check form-check-inline">
-             <label class="radio-inline">
+             <label class="radio-inline no-indent">
            <input type="radio" name="laptop" id="laptop1" value="si"> Sí
            </label>
-           <label class="radio-inline">
+           <label class="radio-inline no-indent">
            <input type="radio" name="laptop" id="laptop2" value="no"> No
           </label>
             </div>
@@ -73,18 +73,18 @@
 
 
           <div class="form-group">
-            <label for="charlas">Charlas que venís a ver</label>
-            <div class="form-check form-check-inline">
-             <label class="checkbox-inline">
-           <input type="checkbox" name="charlas" id="charlas1" value="winvstux"> Win vs Tux
-           </label>
-           <label class="checkbox-inline">
-           <input type="checkbox" name="charlas" id="charlas2" value="git"> Git
+          <label for="charlas">Charlas que venís a ver</label>
+          <div class="form-check form-check-inline">
+          <label class="checkbox-inline no-indent">
+          <input type="checkbox" name="charlas" value="winvstux"> Win vs Tux
           </label>
-          <label class="checkbox-inline">
-           <input type="checkbox" name="charlas" id="charlas3" value="ruby"> Ruby
+          <label class="checkbox-inline no-indent">
+          <input type="checkbox" name="charlas" value="git"> Git
           </label>
-            </div>
+          <label class="checkbox-inline no-indent">
+          <input type="checkbox" name="charlas" value="ruby"> Ruby
+          </label>
+          </div>
           </div>
 
   
@@ -185,8 +185,9 @@
           </div>
 
           <div class="form-group right">
-          <button type="reset" class="btn btn-primary btn-lg pull-right">Borrar</button>
-          <button type="submit" class="btn btn-primary btn-lg pull-right">Enviar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-primary">Borrar</button>
+
           </div>
 
           </div> <!--cierro columna-->

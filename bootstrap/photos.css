@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Palanquin;
+  src: url(fonts/Palanquin-SemiBold.ttf);
+}
+
+body {
+	background: black;
+}
+
+.todo {
+	padding: 30px;
+}
+
+.top {
+	margin-bottom: 40px;
+}
+
+.top h1 {
+	font-family: 'Palanquin', sans-serif;
+	color: white;
+	letter-spacing: -2px;
+}
+
+.white-text {
+	color:white;
+	text-align: center;
+}
+
+.main {
+	background: black;
+}
