@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.fecha {
+	background: #193284;
+}
+
+.fecha p {
+	color: white;
+	margin: 10px 0;
+}
+
+.encabezado {
+	background: url('images/fondo.jpg') no-repeat;
+	background-size: cover;
+	height: 250px;
+}
+
+nav {
+	padding:10px 0;
+}
+
+.logoflisol {
+	margin: 37px auto;
+}
+
+.carousel-box{
+	padding: 0 1px;
+}
+
+.carouselcaption {
+	font-size: 1.5em;
+}
+
+.overflowraro img {
+	width: 100%;
+}
+
+#slider-principal {
+	padding: 10px 0;
+}
+
+#imagenes {
+	padding: 0px 0;
+}
+
+.row-imgs {
+	padding: 10px 0;
+}
+
+.h3-pad {
+	padding: 0 10px;
+}
+
+.thumbnail {
+	margin-bottom: 0px;
+}
+
+.user {
+	padding: 5px 5px 10px 0;
+	font-size: 1.2em;
+}
+
+.user img {
+	padding-right: 10px;
+}
+
+.avatar {
+	display: inline-block;
+	vertical-align: center;
+}
+
+#comentarios {
+	padding: 0px 5px;
+}
+
+.comentario {
+	background: lightgrey;
+}
+
+.boldtext {
+	font-weight: bold;
+}
+
+.pipo {
+	padding: 0 10px;
+}
+
+.comment-post p {
+	padding: 5px;
+}
+
+footer {
+	margin-top: 10px;
+	height:40px;
+	background: #193284;
+	padding: 10px 0;
+}
+
+footer p {
+	color: white;
+}
+
+@media screen and (max-width: 400px) {
+
+	h3 {
+		padding-left: 5px;
+	}
+
+	.overflowraro {
+		padding: 5px;
+	}
+
+	.comentario {
+		padding: 5px;
+	}
+}
