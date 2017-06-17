@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"><meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title></title>
+	<link rel="stylesheet" href="formustyle.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+<body>
+<div class="container-fluid fondo">
+<form action="" class="inscripcion center-block" id="formulario">
+		<h2 class="text-center">Inscripción</h2>
+
+<!--CAMPOS PRIMARIOS-->
+		<div class="form-group">
+		<label for="nombre">Nombre:</label>
+		<input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+<br/>
+		<label for="apellido">Apellido:</label>
+		<input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellido">
+<br/>
+		<label for="telefono">Teléfono:</label> 
+		<input class="form-control" type="text" name="telefono" id="telefono" placeholder="Teléfono">
+<br/>
+		<label for="email">E-mail:</label> 
+		<input class="form-control" type="email" name="email" id="email" placeholder="Mail">
+<br/>
+		<label for="edad">Edad:</label> 
+		<input class="form-control" type="text" name="edad" id="edad" placeholder="Edad">
+<br/>
+		<label>Agregar dirección: 
+		<input type="checkbox" name="direccion" id="direccion">
+		</label>
+		</div>
+
+<!--CAMPOS SECUNDARIOS: Dirección-->
+		<div class="form-group dirformgroup" id="direccionformgroup">
+		<label for="calle">Calle</label> 
+		<input class="form-control" type="text" name="calle" id="calle" placeholder="Calle">
+		<br/>
+		<label for="numero">Número</label>
+		<input class="form-control" type="text" name="numero" id="numero" placeholder="Número">
+		<br/>
+		<label for="ciudad">Ciudad</label>
+		<input class="form-control" type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+		<br/>
+		<label for="cp">Código Postal</label>
+		<input class="form-control" type="text" name="cp" id="cp" placeholder="Código Postal">
+		</div>
+
+<!--Botones: Enviar y Limpiar-->
+		<div>
+		<button type="submit" class="btn btn-default" id="enviar">Enviar</button>
+		<button class="btn btn-default" id="limpiar">Limpiar</button>
+		</div>
+
+<!--Errores-->
+
+<ul class="alert alert-danger error" id="error" role="alert">
+</ul>
+
+
+</form>
+</div>
+
+
+<script type="text/javascript" src="formu.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

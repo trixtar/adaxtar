@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	height: 100vh;
+	padding: 20px;
+	background-color: lightgrey;
+}
+
+.headline {
+	text-align: center;
+	font-family: Verdana;
+}
+
+#slider {
+	margin: 0 auto;
+	padding: 30px;
+	max-width: 60%;;
+	background-color: pink;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#slider a {
+	margin: 10px;
+}
+
+
+

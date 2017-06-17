@@ -1,0 +1,48 @@
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+body {
+	background-color: pink;
+}
+
+
+.document {
+	font-family: Bitter, serif;
+	color: grey;
+	height: 100%;
+
+
+.fondo {
+	background-color: pink;
+}
+
+.box {
+	background-color: lightgrey;
+}
+
+#resultado {
+	display: none;
+}
+
+// -------------------- SEGUNDO CSS
+
+.izquierdo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rombo {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: pink;
+	transform: rotate(-45deg);
+}

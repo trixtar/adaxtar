@@ -1,0 +1,20 @@
+.fondo {
+	background-color: pink;
+	height: 100%;
+	min-height: 100vh;
+}
+
+.inscripcion {
+	width:400px;
+	background-color: white;
+	padding:15px;
+}
+
+.error {
+	margin: 15px 0;
+	display: none;
+}
+
+.dirformgroup {
+	display: none;
+}

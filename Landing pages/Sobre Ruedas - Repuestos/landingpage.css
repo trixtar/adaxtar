@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Oswald|Overpass');
+
+h4 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.8em;
+}
+
+.navigation {
+	margin: 0;
+	background-color: black;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(33,33,33,1);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(33,33,33,1);
+	box-shadow: 0px 3px 6px 0px rgba(33,33,33,1);
+	overflow: hidden;
+}
+
+.logo {
+	display:flex;
+	align-items: center;
+	padding: 15px 0px 15px 20px;
+}
+
+.logo img {
+	padding:0 1em;
+}
+
+.brand {
+	color: white;
+	font-family: 'Oswald',sans-serif;
+	font-size: 3em;
+	text-decoration: none;
+	line-height: 100%;
+}
+
+.brand:hover {
+	text-decoration: none;
+	color: #8d8b8c;
+}
+
+.divbutton {
+	padding: 0px;
+	text-align: center;
+}
+
+.divbutton ul li {
+	float:right;
+	padding-right: 2.5em;
+	line-height: 135px;
+}
+
+.divbutton ul li a {
+	font-family: 'Oswald';
+	font-size: 1.9em;
+	color: white;
+	padding-left: 0;
+	padding-right: 0;
+}
+	
+.divbutton ul li a:hover {
+	color: #8d8b8c;
+	background-color: black !important;
+}
+
+.divbutton ul li a:focus {
+	color: #93062b;
+	background-color: black;
+}
+
+.mainsection {
+	padding: 0px;
+}
+
+/* .left {
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right
+}
+
+.right {
+  width: 0; 
+  height: 0; 
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid black;
+} */
+
+
+article .imagen {
+	padding: 20px 0;
+}
+
+article .texto {
+	padding: 20px;
+}
+
+article p {
+	padding: 10px 0;
+}
+
+.botonbordo,
+.botonbordo:hover,
+.botonbordo:active,
+.botonbordo:visited,
+.botonbordo:focus {
+    background-color: #93062b !important;
+    border-color: grey;
+    color: white;
+}
+
+.extra {
+	display:none;
+}
+
+#autopartes {
+	padding: 1em;
+}
+
+.categorias {
+	height: 60px;
+	background-color: black;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+}
+
+.categorias a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 60px;
+}
+
+.categorias a:hover {
+	color: #8d8b8c;
+}
+
+.categorias a:focus {
+	color: #93062b;
+}
+
+#map-container {
+	height: 250px;
+	width: 100%;
+}
+
+.formulario {
+	padding: 20px;
+}
+
+.error {
+	display: none;
+}
+
+.formside {
+	padding: 20px;
+}
+
+.footerhome {
+	height: 80px;
+	background-color: black;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	padding: 15px 0;
+}
+
+/* CAROUSEL */
+
