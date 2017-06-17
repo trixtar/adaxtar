@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Palanquin;
+  src: url(fonts/Palanquin.ttf);
+}
+
+@font-face {
+  font-family: Arsenal;
+  src: url(fonts/Arsenal.ttf);
+}
+
+@font-face {
+  font-family: Asar;
+  src: url(fonts/Asar.ttf);
+}
+
+a {
+	color:red;
+}
+
+.nav-top {
+	background: red;
+	min-height: 60px;
+	margin: 0 0 10px;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-family: 'Arsenal', sans-serif;
+}
+
+.botones {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.botonmenu {
+	padding: 8px;
+	font-size: 1.2em;
+	background: white;
+	color: red;
+	border-radius: 10px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.botonmenu:hover {
+	background: pink;
+	color: black;
+	text-decoration: none;
+}
+
+.back-img {
+	background: url(img/back3.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.headline {
+	margin-bottom: 80px;
+	margin-top: 20px;
+	height:200px;
+}
+
+
+.headline h1 {
+	font-family: 'Palanquin', sans-serif;
+	padding-left: 30px;
+	font-size: 3.3em;
+	letter-spacing: -2px;
+}
+
+.aullido {
+	letter-spacing: -4px;
+	font-size: 1.2em;
+}
+
+.headline-row {
+    display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.snippet {
+	padding: 5px 15px;
+	margin-bottom: 30px;
+	border-left: 1px solid black;
+	height: 340px;
+	background: #f4f2e9;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	overflow-y: auto
+}
+
+
+.snippet-title {
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.snippet-text {
+	font-family: 'Asar', serif;
+	font-size: 1.2em;
+
+}
+
+.tag {
+	padding:3px;
+	background: red;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+	font-family: 'Arsenal', sans-serif;
+}
+
+.snippet-fecha {
+	margin-top: auto;
+	font-weight: bold;
+}
+
+.snippet-img {
+	width:100%;
+}
+
+.highlight {
+	background: #ffd1da;
+}
+
+.noticias {
+	
+}
+
+.red {
+	color:red;
+}
+
+.foot {
+	height: 50px;
+	color: white;
+	font-weight: bold;
+	font-family: 'Palanquin', sans-serif;
+	background: red;
+	margin: 0;
+
+}
+
+@media screen and (max-width: 400px) {
+
+.headline-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.foot h4 {
+	font-size: 1.3em;
+}
+
+}
