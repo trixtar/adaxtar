@@ -26,14 +26,11 @@ $('.menubtn').on('click',function(event){
 
 event.preventDefault();
 
-vid = $(this).data('link');
-id = '#' + vid;
+target = this.hash;
 
-console.log(id);
-
-$(id).slideDown('slow',function(){
-	$(id).focus();
-});
+$('html, body').animate({
+	scrollTop: $(target).offset().top
+},300);
 	
 });
 
