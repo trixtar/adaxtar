@@ -152,8 +152,14 @@ article p {
 	padding: 20px;
 }
 
+#boton-formulario {
+	margin-bottom: 20px;
+}
+
 .error {
 	display: none;
+	padding: 10px;
+	list-style-type: none;
 }
 
 .formside {

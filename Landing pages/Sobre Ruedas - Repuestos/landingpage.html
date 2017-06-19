@@ -164,23 +164,23 @@
             <input class="form-control" type="text" name="telefono" id="telefono" placeholder="(11) 1111-1111">
           </div>
           <div class="form-group">
-            <label for="edad">Modelo de automóvil FIAT:</label> 
+            <label for="modelo">Modelo de automóvil FIAT:</label> 
             <input class="form-control" type="text" name="modelo" id="modelo" placeholder="Fiat Palio Elx 2007">
           </div>
           <div class="form-group">
-            <label for="texto-formulario">Escriba aquí su solicitud</label>
-            <textarea class="form-control" rows="4" name="texto-formulario"></textarea>
+            <label for="textito">Escriba aquí su solicitud</label>
+            <textarea class="form-control" rows="4" name="textito"></textarea>
           </div>
           <div class="form-group">
             <input type="checkbox"> ¿Desea recibir ofertas y novedades por mail?
           </div>
 
-        <div class="text-right">
+        <div class="text-right" id="boton-formulario">
           <button type="submit" class="btn btn-default botonbordo" id="enviar">Enviar</button>
           <button class="btn btn-default botonbordo" id="limpiar">Limpiar</button>
         </div>
 
-        <ul class="alert alert-danger error" id="form-errors" role="alert">
+        <ul class="alert alert-danger error" id="form-error" role="alert">
         </ul>
       </form>
 
@@ -203,7 +203,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     
-      <script>  
+      <!-- <script>  
  
       function init_map() {
     var var_location = new google.maps.LatLng(-34.601366,-58.444222);
@@ -227,7 +227,7 @@
  
       google.maps.event.addDomListener(window, 'load', init_map);
  
-    </script>
+    </script> -->
     <script src="landingpage.js"></script>
   </body>
 </html>

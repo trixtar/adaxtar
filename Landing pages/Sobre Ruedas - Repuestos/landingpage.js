@@ -3,7 +3,7 @@ var rollingimages = ["0.jpg", "1.jpg", "2.jpg"];
 var k = 0;
 var formulario = $('#formulario');
 var errores = [];
-var formerror = $('#form-error');
+var formError = $('#form-error');
 
 $(document).ready(function(){
 
@@ -76,29 +76,37 @@ $('.verMas').on('click',function(){
 
 $('#enviar').on('click',function(e){
 
-	var nombre = $('#formulario input[name=nombre]').val();
-	var apellido = $('#formulario input[name=apellido]').val();
-	var email = $('#formulario input[name=email]').val();
-	var telefono = $('#formulario input[name=telefono]').val();
-	var textoFormulario = $('#formulario input[name=texto-formulario]').val();
-
 	e.preventDefault();
+	errores=[];
 
-	$('#form-errors').empty().hide();
+	formError.hide().empty();
+
+	var nombre = $('#formulario input[name=nombre]');
+	var apellido = $('#formulario input[name=apellido]');
+	var email = $('#formulario input[name=email]');
+	var telefono = $('#formulario input[name=telefono]');
+	var modelo = $('#formulario input[name=modelo]');
 
 	validarNombre(e);
 	validarApellido(e);
 	validarEmail(e);
 	validarTelefono(e);
-	validarTexto(e);
 
 	if (errores !== '' || errores !== null) {
 		for (i=0;i<errores.length;i++){
-		$('#form-errors').append(errores[i]).show();	
+		formError.append(errores[i]).show();	
 		}
 		
 	}
 
+});
+
+$('#limpiar').on('click', function(e) {
+	e.preventDefault();
+
+	$('form#formulario input').val('');
+	$('form#formulario input:checkbox').removeAttr('checked');
+	$('form#formulario textarea').val('');
 });
 
  
@@ -116,11 +124,11 @@ function soloLetras(x) {
 
 
 function validarNombre(e) {
-	if (nombre == '' || nombre == null) {
+	if (nombre.value == '' || nombre.value == null) {
 		console.log('Nombre vacío');
 		errores.push('<li>Por favor ingresá tu nombre</li>');
 		e.preventDefault();
-	} else if (!soloLetras(nombre)) {
+	} else if (!soloLetras(nombre.value)) {
 		console.log('Nombre inválido');
 		errores.push('<li>Por favor ingresá un nombre válido</li>');
 		e.preventDefault();
@@ -128,11 +136,11 @@ function validarNombre(e) {
 }
 
 function validarApellido(e) {
-	if (nombre == '' || nombre == null) {
+	if (apellido.value == '' || apellido.value == null) {
 		console.log('Apellido vacío');
 		errores.push('<li>Por favor ingresá tu apellido</li>');
 		e.preventDefault();
-	} else if (!soloLetras(apellido)) {
+	} else if (!soloLetras(apellido.value)) {
 		console.log('Apellido inválido');
 		errores.push('<li>Por favor ingresá un apellido válido</li>');
 		e.preventDefault();
@@ -141,11 +149,11 @@ function validarApellido(e) {
 
 function validarEmail(e) {
 	expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	if (email == '' || email == null) {
+	if (email.value == '' || email.value == null) {
 		console.log('E-mail vacío');
 		errores.push('<li>Por favor ingresá tu e-mail</li>');
 		e.preventDefault();
-	} else if (!expr.test(email)) {
+	} else if (!expr.test(email.value)) {
 		console.log('E-mail inválido');
 		errores.push('<li>Por favor ingresá un e-mail válido</li>');
 		e.preventDefault();
@@ -155,24 +163,17 @@ function validarEmail(e) {
 
 function validarTelefono(e) {
 	expr = /^[0-9/-/(/)/#]+$/;
-	if (telefono == '' || telefono == null) {
+	if (telefono.value == '' || telefono.value == null) {
 		console.log('Teléfono vacío');
 		errores.push('<li>Por favor ingresá tu teléfono</li>');
 		e.preventDefault();
-	} else if (!expr.test(telefono)) {
+	} else if (!expr.test(telefono.value)) {
 		console.log('Teléfono inválido');
 		errores.push('<li>Por favor ingresá un teléfono válido</li>');
 		e.preventDefault();
 	}
 }
 
-function validarTexto(e) {
-	if (textoFormulario == '' || textoFormulario == null) {
-		console.log('Texto vacío');
-		errores.push('<li>Por favor ingresá una consulta<li>');
-		e.preventDefault();
-	}
-}
 
 /*
 $(#boton).on('click',function(){
