@@ -1,9 +1,13 @@
+// VARIABLES
+
 var options = ['Compra de repuestos', 'Tasación y/o venta de repuestos', 'Localización de repuestos originales', 'Service automotriz'];
 var rollingimages = ["0.jpg", "1.jpg", "2.jpg"];
 var k = 0;
 var formulario = $('#formulario');
 var errores = [];
 var formError = $('#form-error');
+
+// DOCUMENT READY
 
 $(document).ready(function(){
 
@@ -82,33 +86,60 @@ $('#enviar').on('click',function(e){
 	var apellido = $('#formulario input[name=apellido]');
 	var email = $('#formulario input[name=email]');
 	var telefono = $('#formulario input[name=telefono]');
-	var modelo = $('#formulario input[name=modelo]');
+	var solicitud = $('#formulario textarea[name=solicitud]');
 
 	validarNombre(e);
 	validarApellido(e);
 	validarEmail(e);
 	validarTelefono(e);
+	validarSolicitud(e);
 
-	if (errores !== '' || errores !== null) {
+	if (errores.length !== 0) {
 		for (i=0;i<errores.length;i++){
 		formError.append(errores[i]).show();	
 		}
-		
+	} else {
+		var datos = formulario.serialize();
+		var datosArray = datos.split('&');
+		console.log(datos, datosArray);
 	}
 
-});
+
+// PETICION AJAX
+
+$.ajax({
+	url: 'http://mariabelenalegre/ada-api/api.php',
+	type: 'post',
+	data: datos,
+	success: function(response) {
+		if(response){
+			console.log(response);
+		} else {
+			console.log('todo ok');
+			alert('¡Gracias por contactarte con nosotros!');
+			location.reload();
+		}
+	}
+
+}); //termina ajax
+
+
+}); // termina función validar
+
 
 $('#limpiar').on('click', function(e) {
 	e.preventDefault();
 
-	$('form#formulario input').val('');
-	$('form#formulario input:checkbox').removeAttr('checked');
-	$('form#formulario textarea').val('');
+	formError.hide().empty();
+	formulario[0].reset();
+
 });
 
  
 }); //documentready
 
+
+// FUNCIONES
 
 function soloLetras(x) { 
 
@@ -159,7 +190,7 @@ function validarEmail(e) {
 
 
 function validarTelefono(e) {
-	expr = /^[0-9/-/(/)/#]+$/;
+	expr = /^[0-9\-\(\)\#\+\s]+$/;
 	if (telefono.value == '' || telefono.value == null) {
 		console.log('Teléfono vacío');
 		errores.push('<li>Por favor ingresá tu teléfono</li>');
@@ -171,18 +202,10 @@ function validarTelefono(e) {
 	}
 }
 
-
-/*
-$(#boton).on('click',function(){
-	validarMail($(#mail).val());
-}); //listener del boton
-
-
-
-
-
-function validarMail(mail) etc etc
-
-
-
-*/
+function validarSolicitud(e) {
+	if (solicitud.value == '' || solicitud.value == null) {
+		console.log('Solicitud vacía');
+		errores.push('<li>Por favor detallanos tu solicitud. Si necesitás que te llamemos, no dudes en pedírnoslo.</li>');
+		e.preventDefault(e);
+	}
+}
